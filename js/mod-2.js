@@ -242,6 +242,21 @@
 //   // Change code above this line
 // }
 
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+// const newArray = [];
+
+// for (const element of array1) {
+//   if (array2.includes(element)) {
+//     newArray.push(element);
+//   }
+// }
+// console.log(newArray)
+//  // Change code above this line
+// }
+// getCommonElements([1, 2, 3], [2, 4])
+// getCommonElements([1, 2, 3], [2, 1, 17, 19])
+
 // 2-26
 // function calculateTotalPrice(order) {
 //   let total = 0;
@@ -459,15 +474,160 @@
 //    calculateTotal(24)
 //    calculateTotal()
 
-   function calculateTotalPrice(order) {
-    let total = 0;
-    // Change code below this line
-  for (i = 0; i < order.length; i += 1){
-    total += order[i];
-  }
-    // Change code above this line
-    console.log(total);
-  }
-calculateTotalPrice([12, 85, 37, 4]);
-calculateTotalPrice([164, 48, 291])
+//    function calculateTotalPrice(order) {
+//     let total = 0;
+//     // Change code below this line
+//   for (const i = 0; i < order.length; i += 1){
+//     total += order[i];
+//   }
+//     // Change code above this line
+//     console.log(total);
+//   }
+// calculateTotalPrice([12, 85, 37, 4]);
+// calculateTotalPrice([164, 48, 291])
 
+// function findLongestWord(string) {
+//   // Change code below this line
+// let maxLengthWord = 0;
+// let longestWord;w
+// const words = string.split(' ')
+// // console.log(words)
+
+// for (const word of words) {
+//   if (word.length > maxLengthWord){
+//     maxLengthWord = word.length;
+//     longestWord = word;
+//   }
+// }
+// console.log(maxLengthWord)
+// // console.log(longestWord)
+//   // Change code above this line
+// }
+// findLongestWord("The quick brown fox jumped over the lazy dog")
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+// for (let i = min; i <= max; i += 1){
+//   numbers.push(i)
+// }
+//   // Change code above this line
+//   console.log(numbers);
+// }
+// createArrayOfNumbers(14, 17)
+
+// Напиши функцію filterArray(numbers, value), 
+// яка приймає масив чисел (параметр numbers) 
+// і повертає новий масив, в якому будуть тільки 
+// ті елементи масиву numbers, які більші за 
+// значення параметра value (число).
+// function filterArray(numbers, value) {
+//   // Change code below this line
+// const newArray = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if(numbers[i] > value) {
+//       newArray.push(numbers[i])
+//     }
+//   }
+//   console.log(newArray)
+//  // Change code above this line
+// }
+// filterArray([1, 2, 3, 4, 5], 3)
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   console.log(fruits.includes(fruit)); // Change this line
+// }
+// checkFruit("plum");
+// checkFruit("mandarin")
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   // for (let i = 0; i < order.length; i += 1) {
+//   //   total += order[i];
+//   // }
+//   for (const iterator of order) {
+//     total += iterator
+//   }
+//   // Change code above this line
+//   console.log(total);
+// }
+// calculateTotalPrice([12, 85, 37, 4])
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   console.log(filteredNumbers);
+//   // Change code above this line
+// }
+// filterArray([1, 2, 3, 4, 5], 3)
+
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+// const newArray = [];
+
+// for (let i = start; i <= end; i +=1 ){
+//   if (i % 2 === 0) {
+//     newArray.push(i)
+//   }
+// }
+// console.log(newArray)
+//    // Change code above this line
+//  }
+//  getEvenNumbers(2, 5)
+//  getEvenNumbers(3, 11)
+
+// function fn() {
+//   for (let i = 0; i <= 5; i += 1) {
+//     console.log(i);
+
+//     if (i === 3) {
+//       console.log("Знайшли число 3, робимо повернення, перериваючи цикл і функцію");
+//       return i;
+//     }
+//   }
+
+//   // Цей console.log не виконається
+//   console.log("Лог після циклу в тілі функції");
+// }
+
+// const result = fn();
+// console.log("Лог після виходу з функції");
+// console.log(`Результат виконання функції ${result}`);
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       break;
+//     }
+//   }
+//   console.log(number) ;
+//   // Change code above this line
+// }
+// findNumber(2, 6, 5)
+
+
+function includes(array, value) {
+  // Change code below this line
+for (let i = 0; i < array.length; i += 1){
+  if (array[i] === value) {
+    console.log(true) 
+  }
+}
+console.log(false)
+
+// console.log(array.includes(value)) ;
+  // Change code above this line
+}
+includes([1, 2, 3, 4, 5], 3)
