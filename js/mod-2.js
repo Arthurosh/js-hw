@@ -49,8 +49,33 @@
 // fruits[3] = "banana";
 
 // 2-7
+// const fruits = ["apple", "peach", "pear", "banana"];
+// // Change code below this line
+// const fruitsArrayLength = fruits.length;
+
 // 2-8
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+// console.log(lastElementIndex);
+// console.log(lastElement);
+// // Change code below this line
+
 // 2-9
+// function getExtremeElements(array) {
+//   // Change code below this line
+// const lastElementIndex = array.length - 1;
+// const firstElementIndex = [array[0], array[lastElementIndex]];
+// return firstElementIndex
+//   // Change code above this line
+// }
+// або
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   return newArray = [array[0], array[array.length - 1]]
+//   // Change code above this line
+// }
+
 // 2-10
 // function splitMessage(message, delimeter) {
 //   let words;
@@ -66,6 +91,19 @@
 //   return message.split(" ").length * pricePerWord;
 //   // Change code above this line
 // }
+// function calculateEngravingPrice(message, pricePerWord) {
+//     // Change code below this line
+//  // const words = message.split(' ') 
+//  // console.log(words)
+//  // const lengthMessage = words.length;
+//  // console.log(lengthMessage)
+//  // const total = lengthMessage * pricePerWord;
+//  // console.log(total)
+ 
+//  return message.split(' ').length * pricePerWord;
+//     // Change code above this line
+//  }
+//  calculateEngravingPrice("JavaScript is in my blood", 10)
 // 2-12
 // function makeStringFromArray(array, delimeter) {
 //   let string;
@@ -364,3 +402,72 @@
 // }
 // console.log(multiply(1, 2, 3)); //  6
 // --------------------------------------------
+
+// function slugify(title) {
+//     // Change code below this line
+//     const normalizedTitle = title.toLowerCase();
+//     const newTitle = normalizedTitle.split(' ');
+//     const slugTitle = newTitle.join('-')
+//   console.log(slugTitle)
+//     // Change code above this line
+//   }
+//   slugify("Arrays for begginers")
+
+//   const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// console.log(firstTwoEls)
+// const nonExtremeEls = fruits.slice(1, - 1);
+// console.log(nonExtremeEls)
+// const lastThreeEls = fruits.slice(-3);
+// console.log(lastThreeEls)
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients); 
+// console.log(allClients)
+// const allsClients = newClients.concat(oldClients); 
+// console.log(allsClients)
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+// const newArray = firstArray.concat(secondArray).slice(0, maxLength)
+// console.log(newArray)
+//     // Change code above this line
+//   }
+//   makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) { // Change this line
+//   console.log(i);
+// }
+
+// function calculateTotal(number) {
+//     // Change code below this line
+//     let sumNumber = 0;
+//    for (let i = 0; i <= number; i += 1) {
+//     sumNumber += i;
+//    }
+//    console.log(sumNumber)
+//      // Change code above this line
+//    }
+
+//    calculateTotal(24)
+//    calculateTotal()
+
+   function calculateTotalPrice(order) {
+    let total = 0;
+    // Change code below this line
+  for (i = 0; i < order.length; i += 1){
+    total += order[i];
+  }
+    // Change code above this line
+    console.log(total);
+  }
+calculateTotalPrice([12, 85, 37, 4]);
+calculateTotalPrice([164, 48, 291])
+
